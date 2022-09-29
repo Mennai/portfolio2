@@ -1,0 +1,478 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.logo {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.nav-border::after {
+  content: "";
+  background: transparent;
+  transition: all 0.3s;
+}
+.nav-border:hover::after,
+.nav-border > a.active-nav::after {
+  width: 80%;
+  background-color: #000;
+}
+header {
+  height: 100vh;
+  background-image: url(../img/bg.jpg);
+  background-size: 100% 100%;
+  position: relative;
+}
+.homelayer {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.homeCaption {
+  color: white;
+  text-align: center;
+}
+.homeCaption h5 {
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.typing {
+  font-weight: 200;
+  font-size: 4.4rem;
+}
+.typing::after {
+  content: "";
+  animation: homeTyping;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes homeTyping {
+  0% {
+    content: "|";
+  }
+  2% {
+    content: "D|";
+  }
+  4% {
+    content: "De|";
+  }
+  6% {
+    content: "Dev|";
+  }
+  8% {
+    content: "Deve|";
+  }
+  10% {
+    content: "Devel|";
+  }
+  12% {
+    content: "Develo|";
+  }
+  14% {
+    content: "Develop|";
+  }
+  16% {
+    content: "Develope|";
+  }
+  18% {
+    content: "Developer|";
+  }
+  20% {
+    content: "Develope|";
+  }
+  22% {
+    content: "Develop|";
+  }
+  24% {
+    content: "Develo|";
+  }
+  26% {
+    content: "Devel|";
+  }
+  28% {
+    content: "Deve|";
+  }
+  30% {
+    content: "Dev|";
+  }
+  32% {
+    content: "De|";
+  }
+  34% {
+    content: "Des|";
+  }
+  36% {
+    content: "Desi|";
+  }
+  38% {
+    content: "Desig|";
+  }
+  40% {
+    content: "Design|";
+  }
+  42% {
+    content: "Designe|";
+  }
+  44% {
+    content: "Designer|";
+  }
+  48% {
+    content: "Designe|";
+  }
+  50% {
+    content: "Design|";
+  }
+  52% {
+    content: "Desig|";
+  }
+  54% {
+    content: "Desi|";
+  }
+  56% {
+    content: "Des|";
+  }
+  58% {
+    content: "De|";
+  }
+  60% {
+    content: "D|";
+  }
+  62% {
+    content: "|";
+  }
+  64% {
+    content: "F|";
+  }
+  68% {
+    content: "Fr|";
+  }
+  70% {
+    content: "Fre|";
+  }
+  72% {
+    content: "Free|";
+  }
+  74% {
+    content: "Freel|";
+  }
+  76% {
+    content: "Freela|";
+  }
+  78% {
+    content: "Freelan|";
+  }
+  80% {
+    content: "Freelanc|";
+  }
+  88% {
+    content: "Freelance|";
+  }
+  90% {
+    content: "Freelancer|";
+  }
+  100% {
+    content: "|";
+  }
+}
+.social-icons i {
+  background-color: rgb(0, 0, 0, 0.6);
+  border: 0 solid gray;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 0 8px;
+}
+.progress-bar {
+  background-color: black;
+}
+.btn {
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 13px;
+}
+.btn-dark:hover {
+  background-color: #fff;
+  color: #000;
+}
+.btn-light {
+  border: #000 1px solid;
+}
+.btn-light:hover {
+  background-color: #000;
+  color: #fff;
+}
+.services {
+  background: #f7f7f7;
+}
+.ser-title,
+.port-title {
+  font-size: 40px;
+  color: #343434;
+  font-weight: 900;
+}
+.ser-icon {
+  margin: auto;
+  font-size: 30px;
+  margin-bottom: 20px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  background: #f4f4f4;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.ser-card {
+  border: 0;
+}
+.ser-card h2 {
+  margin-bottom: 15px;
+  font-weight: 800;
+  font-size: 18px;
+}
+.ser-card:hover .ser-icon {
+  color: #fff;
+  background-color: #000;
+}
+.port-nav {
+  margin: 0 15px;
+  color: #222;
+  font-weight: 700;
+  font-size: 16px;
+}
+.nav-link {
+  color: #222;
+}
+.nav-link.active {
+  border-bottom: #000 2px solid;
+  border-radius: 0px;
+  color: #222 !important;
+  background: white !important;
+}
+.port-layer {
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background-color: rgba(255, 255, 255,0.95);
+  border: transparent 6px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 1s;
+  opacity:0;
+  
+}
+.port-item:hover .port-layer{
+  opacity:1;
+
+}
+.port-cap i{
+  background-color: #000 ;
+  padding: 8px;
+  color: white;
+}
+.carousel-bg{
+  background-color: #f7f7f7;
+}
+.carousel-bg p{
+  line-height: 1.6;
+  margin: 0;
+  font-size: 15px;
+  color: #748182;
+}
+.carousel-name{
+  font-size: 16px;
+  font-weight: 600;
+  margin: 30px 0 5px;
+color: #343434;
+}
+.carousel-indicators{
+  top: 120%;
+}
+.carousel-indicators [data-bs-target]{
+  background-color: #343434;
+  width: 10px;
+  height: 10px;
+  top: 120%;
+  border-radius: 50%;
+}
+.contentOfCarousel span{
+  font-size: 13px;
+}
+.numbers {
+ 
+  line-height: 1em;
+  text-align: center;
+  margin: 10 auto;
+  overflow: hidden;
+}
+.numbers__window {
+  display: inline-block;
+  overflow: hidden;
+  width: 0.5em;
+  height: 1em;
+}
+.numbers__window__digit {
+  word-break: break-all;
+  display: block;
+  width: 10px;
+  /* padding: 0 0.52em 0 0; */
+  margin: 0 auto;
+  overflow: inherit;
+  animation: counting 0.4s steps(10) forwards ;
+}
+.numbers__window__digit::before {
+  content: attr(data-fake);
+  width: 100%;
+  height: auto;
+}
+@keyframes counting {
+  100% {
+    transform: translate3d(0, -10em, 0);
+  }
+}
+.numbers__window__digit--1 {
+  animation-iteration-count: 3;
+}
+.numbers__window__digit--2 {
+  animation-iteration-count: 6;
+}
+.numbers__window__digit--3 {
+  animation-iteration-count: 9;
+}
+.numbers__window__digit--4 {
+  animation-iteration-count: 12;
+}
+.numbers__window__digit--5 {
+  animation-iteration-count: 15;
+}
+
+/* contact */
+.contact .container {
+  width: 60%;
+  margin: auto;
+  padding: 50px 0px;
+}
+
+.contact form {
+  width: 100%;
+}
+
+.contact input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.contact .subject,
+.text-area {
+  padding: 10px;
+}
+
+.contact .personal-data .user-name {
+  padding: 10px;
+}
+
+.contact .personal-data .e-mail {
+  padding: 10px;
+}
+
+.contact .personal-data .user-name,
+.e-mail {
+  width: 50%;
+}
+
+/* .contact  .personal-data .e-mail{
+  width: 50%;
+}  */
+.contact .personal-data .user-name input {
+  width: 100%;
+}
+
+.contact .personal-data .e-mail input {
+  width: 100%;
+}
+
+.contact .e-mail,
+.user-name {
+  padding: 0px 5px;
+}
+
+.contact .subject input {
+  width: 100%;
+}
+
+.contact .text-area textarea {
+  width: 100%;
+  padding: 30px 10px;
+  border-color: gray;
+  border-radius: 5px;
+}
+
+.contact button {
+  border: none;
+  color: white;
+  background-color: gray;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14;
+  font-weight: 400;
+
+}
+
+.contact .btn {
+  padding: 10px;
+}
+
+.contact .btn button:hover {
+  background-color: gray;
+}
+
+.contact h2 {
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+  position: relative;
+  padding-top: 50px;
+}
+/* footer */
+.footer {
+  text-align: center;
+  background-color: #333333;
+  padding: 50px 0px;
+}
+
+.footer .social-media a {
+  padding: 10px;
+  color: white;
+  font-size: 18;
+  font-weight: 800;
+}
+
+.footer .social-media a:hover {
+  color: gray;
+}
+
+.footer p {
+  color: white;
+  padding: 20px;
+}
+
+.footer p a {
+  color: gray;
+  text-decoration: none;
+}
+
+.footer p a:hover {
+  text-decoration: underline;
+}
